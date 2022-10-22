@@ -1,7 +1,8 @@
-#include <SDL2/SDL.h>
+#include "game/game.h"
 
 int main()
 {
-    SDL_Init(SDL_INIT_EVERYTHING);
+    Game game(640, 480, "Cave Story", 0);
+    game.run();
     return 0;
 }

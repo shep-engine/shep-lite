@@ -6,7 +6,7 @@ add_executable(
     ${PROJECT_NAME}
     main.cpp
     game/game.cpp
-    game/include/game.h
+    game/game.h
 )
 
 add_subdirectory(engine)
