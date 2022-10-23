@@ -22,9 +22,9 @@ Sprite::Sprite(Graphics &graphics, const std::string& filePath, int srcx, int sr
 
 Sprite::~Sprite() {}
 
-void Sprite::draw(Graphics &graphics, int x, int y)
+void Sprite::draw(Graphics &graphics, int x, int y, int scale)
 {
-    SDL_Rect dst = {x,y,src_rect.w,src_rect.h};
+    SDL_Rect dst = {x,y,src_rect.w*scale,src_rect.h*scale};
     graphics.blit(sprite_sheet, src_rect, dst);
 }
 
