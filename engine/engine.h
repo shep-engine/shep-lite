@@ -15,6 +15,7 @@ public:
     void render();
     
     bool isRunning() {return running;}
+    void setRunning(bool new_running) {running = new_running;}
     virtual ~Engine();
 private:
     SDL_Window* window;

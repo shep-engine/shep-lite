@@ -8,23 +8,6 @@ Engine::Engine(int w, int h, std::string title, Uint32 flags)
     running = true;
 }
 
-void Engine::events()
-{
-    SDL_Event e;
-    while (SDL_PollEvent(&e))
-    {
-        switch (e.type)
-        {
-            case SDL_QUIT:
-                SDL_Quit();
-                running = false;
-                break;
-            default:
-                break;
-        }
-    }
-}
-
 void Engine::clear()
 {
     SDL_RenderClear(renderer);
